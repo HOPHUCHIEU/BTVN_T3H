@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background: #f9e6b3;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            background: #b6e7a3;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        .brand-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-item {
+            padding: 10px 15px;
+            background: #f4cccc;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+
+        .login {
+            background: #b6e7a3;
+            padding: 10px 15px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+
+        .profile {
+            background: #d9ead3;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bottom-nav {
+            background: #f9e6b3;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .notification {
+            position: relative;
+        }
+
+        .notification span {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #f4cccc;
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 50%;
+            padding: 3px 7px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar 1 -->
+    <div class="navbar">
+        <div class="logo">Logo</div>
+        <div class="nav-links">
+            <div class="nav-item">About</div>
+            <div class="nav-item">Home</div>
+            <div class="nav-item">Contact</div>
+        </div>
+    </div>
+
+    <!-- Navbar 2 -->
+    <div class="navbar">
+        <div style="display: flex; align-items: center;">
+            <div class="logo">Logo</div>
+            <div class="brand-name">Brand name</div>
+        </div>
+        <div class="nav-links">
+            <div>Home</div>
+            <div>About</div>
+            <div>Contact</div>
+        </div>
+        <div class="login">Login</div>
+    </div>
+
+    <!-- Navbar 3 -->
+    <div class="navbar">
+        <div style="display: flex; align-items: center;">
+            <div class="logo">Logo</div>
+            <div class="brand-name">Brand name</div>
+        </div>
+        <div>Home</div>
+        <div class="profile"></div>
+        <div>Your name</div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <div class="profile"></div>
+        <div class="icon">
+            <div>🏠</div>
+            <div>Home</div>
+        </div>
+        <div class="icon">
+            <div>👥</div>
+            <div>Friends</div>
+        </div>
+        <div class="icon">
+            <div>🛍️</div>
+            <div>Market</div>
+        </div>
+        <div class="icon notification">
+            <div>🔔</div>
+            <span>1</span>
+        </div>
+        <div class="profile"></div>
+        <div>Your name</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    background-color: #b8b0b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.form-container {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(175, 43, 43, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.form-group.inline {
+    flex-direction: row;
+    align-items: center;
+}
+.form-group.inline label {
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+.form-group label {
+    margin-bottom: 5px;
+}
+.form-group input, .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group textarea {
+    resize: vertical;
+}
+.submit-btn {
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+}

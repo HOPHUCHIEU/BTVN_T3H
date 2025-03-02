@@ -1,0 +1,11 @@
+.multi-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.column {
+    flex: 1 1 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}

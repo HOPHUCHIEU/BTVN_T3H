@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bố cục trang web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header, .footer {
+            background: #f9e6b3;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .main {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            width: 20%;
+            background: #f4cccc;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 1;
+            background: #d9ead3;
+            padding: 20px;
+        }
+
+        .left {
+            order: -1; /* Đảm bảo sidebar trái hiển thị đúng vị trí */
+        }
+
+        .footer {
+            margin-top: auto;
+        }
+
+        /* Responsive cho màn hình nhỏ */
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">Header</header>
+        <div class="main">
+            <aside class="sidebar left">Left sidebar</aside>
+            <section class="content">Content</section>
+            <aside class="sidebar right">Right sidebar</aside>
+        </div>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
