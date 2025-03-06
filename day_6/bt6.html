@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <style>
+        .card-group {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 180px;
+            /* Khoảng cách với 2 góc màn hình */
+            gap: 20px;
+            /* Khoảng cách giữa các card */
+        }
+
+        .card img {
+            height: 200px;
+            /* Thu nhỏ hình ảnh */
+            object-fit: cover;
+        }
+
+        .footer {
+            background-color: #111;
+            color: #ccc;
+            padding: 40px 0;
+        }
+
+        .footer h5 {
+            color: #d4a017;
+        }
+
+        .footer a {
+            color: #cccc66;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .image-grid img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            margin: 3px;
+            border-radius: 5px;
+        }
+
+        .footer .btn-custom {
+            background-color: #666;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+        }
+
+        .footer .btn-custom:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5 fs-2" href="#" style="color: orange;">Classic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+            <form class="d-flex ms-auto" role="search"></form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"></li>
+                <a class="nav-link fs-4" aria-current="page" href="#"
+                    style="border: 2px solid transparent; color: black;"
+                    onmouseover="this.style.border='2px solid orange'; this.style.color='orange';"
+                    onmouseout="this.style.border='2px solid transparent'; this.style.color='black';">Home</a>
+                </li>
+                <li class="nav-item"></li>
+                <a class="nav-link fs-4" href="#" style="border: 2px solid transparent; color: black;"
+                    onmouseover="this.style.border='2px solid orange'; this.style.color='orange';"
+                    onmouseout="this.style.border='2px solid transparent'; this.style.color='black';">About</a>
+                </li>
+                <li class="nav-item"></li>
+                <a class="nav-link fs-4" aria-disabled="true" style="border: 2px solid transparent; color: black;"
+                    onmouseover="this.style.border='2px solid orange'; this.style.color='orange';"
+                    onmouseout="this.style.border='2px solid transparent'; this.style.color='black';">Blog</a>
+                </li>
+                <li class="nav-item"></li>
+                <a class="nav-link fs-4" aria-disabled="true" style="border: 2px solid transparent; color: black;"
+                    onmouseover="this.style.border='2px solid orange'; this.style.color='orange';"
+                    onmouseout="this.style.border='2px solid transparent'; this.style.color='black';">Contact</a>
+                </li>
+            </ul>
+            </form>
+        </div>
+        </div>
+    </nav>
+    <div class="card mb-3">
+        <img src="https://truongthinh.info/wp-content/uploads/2022/01/13/19/50-hinh-anh-dep-thien-nhien-anh-phong-canh-dep-3d-chat-luong-4k-9.jpg"
+            class="card-img-top" alt="..." style="height: 500px;" />
+    </div>
+    <div>
+        <h1 class="text-center mt-5" style="color: orange;">Introduction</h1>
+        <p class="text-center fs-5">
+            Suspendisse ut magna vel velit cusus tempor ut nec nunc. Mauris vehicula,
+            <br />
+            augue in tincidunt porta, inpsum blandit massa
+        </p>
+    </div>
+    <div class="card-group">
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/91/cb/54/91cb545176720cc851687a7263984600.jpg" class="card-img-top"
+                alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Lorm ipsum dolor #1</h5>
+                <p class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in
+                    to additional content. This content is a little bit longer.
+                </p>
+                <p class="card-text">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </p>
+                <a href="#" class="btn btn-primary">DETAIL</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/91/cb/54/91cb545176720cc851687a7263984600.jpg" class="card-img-top"
+                alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Lorm ipsum dolor #2</h5>
+                <p class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in
+                    to additional content. This content is a little bit longer.
+                </p>
+                <p class="card-text">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </p>
+                <a href="#" class="btn btn-primary">DETAIL</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/91/cb/54/91cb545176720cc851687a7263984600.jpg" class="card-img-top"
+                alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Lorm ipsum dolor #3</h5>
+                <p class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in
+                    to additional content. This content is a little bit longer.
+                </p>
+                <p class="card-text">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </p>
+                <a href="#" class="btn btn-primary">DETAIL</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/91/cb/54/91cb545176720cc851687a7263984600.jpg" class="card-img-top"
+                alt="..." />
+            <div class="card-body">
+                <h5 class="card-title">Lorm ipsum dolor #4</h5>
+                <p class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in
+                    to additional content. This content is a little bit longer.
+                </p>
+                <p class="card-text">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </p>
+                <a href="#" class="btn btn-primary">DETAIL</a>
+            </div>
+        </div>
+    </div>
+    <!-- chia cột colum12 -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Left Content -->
+            <div class="col-md-8">
+                <h2 class="text-warning">Pellentesque fermentum mauris et posuere</h2>
+                <p>Vivamus accumsan blandit ligula. Sed lobortis efficitur sapien</p>
+                <img src="https://i-ione.vnecdn.net/2019/02/25/sieu1-4355-1551067329.jpg" alt="Main Image"
+                    class="img-fluid my-3">
+                <p>Donec tempor lobortis tortor, in feugiat massa facilisis sed. Ut dignissim viverra pretium. In eu
+                    justo maximus turpis feugiat finibus scelerisque nec eros. Cras nec lectus tempor nibh vestibulum
+                    eleifend at ac elit.</p>
+                <p>Morbi vel pharetra massa, non iaculis tortor. Nulla porttitor tincidunt felis et feugiat. Vivamus
+                    fermentum ligula justo, sit amet blandit nisl volutpat id.</p>
+                <button class="btn btn-warning">READ MORE</button>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <!-- Categories -->
+                <h4 class="text-warning">Categories</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-primary">Tincidunt non faucibus placerat</a></li>
+                    <li><a href="#" class="text-primary">Vestibulum tempor ac lectus</a></li>
+                    <li><a href="#" class="text-primary">Fusce non turpis euismod</a></li>
+                    <li><a href="#" class="text-primary">Nam in augue consectetur</a></li>
+                    <li><a href="#" class="text-primary">Text Link Color #006699</a></li>
+                </ul>
+
+                <!-- Useful Links -->
+                <h4 class="text-warning">Useful Links</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-primary">Suspendisse sed dui nulla</a></li>
+                    <li><a href="#" class="text-primary">Lorem ipsum dolor sit</a></li>
+                    <li><a href="#" class="text-primary">Duiss nec purus et eros</a></li>
+                    <li><a href="#" class="text-primary">Etiam pulvinar et ligula sed</a></li>
+                    <li><a href="#" class="text-primary">Proin egestas eu felis et iaculis</a></li>
+                </ul>
+
+                <!-- Related Posts -->
+                <div class="row mt-4">
+                    <h4 class="text-warning">Related Posts</h4>
+                    <div class="col-12 d-flex align-items-center mb-3">
+                        <img src="https://genk.mediacdn.vn/2018/7/16/redrangerprimary-1531714478664148055628.jpg"
+                            alt="Related Post 1" class="img-fluid me-3" style="width: 60px; height: 60px;">
+                        <div>
+                            <h6 class="text-warning mb-1">Lorem ipsum dolor</h6>
+                            <p class="mb-0">Aenean cursus tellus mauris, quis consequat mauris dapibus id.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center mb-3">
+                        <img src="https://genk.mediacdn.vn/2018/7/16/redrangerprimary-1531714478664148055628.jpg"
+                            alt="Related Post 2" class="img-fluid me-3" style="width: 60px; height: 60px;">
+                        <div>
+                            <h6 class="text-warning mb-1">Lorem ipsum dolor</h6>
+                            <p class="mb-0">Aenean cursus tellus mauris, quis consequat mauris dapibus id.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex align-items-center mb-3">
+                        <img src="https://genk.mediacdn.vn/2018/7/16/redrangerprimary-1531714478664148055628.jpg"
+                            alt="Related Post 3" class="img-fluid me-3" style="width: 60px; height: 60px;">
+                        <div>
+                            <h6 class="text-warning mb-1">Lorem ipsum dolor</h6>
+                            <p class="mb-0">Aenean cursus tellus mauris, quis consequat mauris dapibus id.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- kết thúc chia cột 12 -->
+    <footer class="footer text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Proin eu posuere felis</h5>
+                    <p>Classic is free HTML CSS website template provided by templatemo for everyone. Feel free to
+                        use
+                        it.</p>
+                    <p>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor
+                        pharetra.</p>
+                    <strong>Danny Egg (Executive)</strong>
+                    <img src="https://kenh14cdn.com/Uploaded/Share/2010/05/14/100514CinePR01.jpg" alt="Danny Egg"
+                        class="mt-2 rounded">
+                </div>
+                <div class="col-md-3">
+                    <h5>Nulla tortor dolor</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Tincidunt non faucibus</a></li>
+                        <li><a href="#">Vestibulum tempor</a></li>
+                        <li><a href="#">Fusce non turpis euismod</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit</a></li>
+                        <li><a href="#">Nam in augue consectetur</a></li>
+                        <li><a href="#">Text Link Color #CCCC66</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Etiam mollis ornare</h5>
+                    <p>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor
+                        pharetra.</p>
+                    <p>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor
+                        pharetra.</p>
+                    <p>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor
+                        pharetra.</p>
+                    <button class="btn btn-custom">READ MORE</button>
+                </div>
+                <div class="col-md-3">
+                    <h5>Fusce non turpis</h5>
+                    <div class="image-grid d-flex flex-wrap">
+                        <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg" alt="Image">
+                        <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg" alt="Image">
+                        <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg" alt="Image">
+                        <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg" alt="Image">
+                        <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg" alt="Image">
+                        <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg" alt="Image">
+                        <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg" alt="Image">
+                        <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg" alt="Image">
+                    </div>
+                    <p>Curabitur dui massa, aliquam quis mi sed, tempor vulputate tellus. Sed vestibulum non neque.
+                    </p>
+                    <button class="btn btn-custom">BROWSE</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>Copyright 2016 Your Company Name</p>
+            <img src="https://shopfile.net/uploads/products/large/file-tranh-tre-em-sieu-nhan-robot-khu-vui-choi-51-demo.jpg"
+                alt="Company Logo" class="mt-2" style="width: 100px; height: auto;">
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+</html>
