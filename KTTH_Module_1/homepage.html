@@ -115,37 +115,37 @@
     </div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-      let products = [
-        { img: "./img/sp1.png", name: "Product 1", price: "$99" },
-        { img: "./img/sp1.png", name: "Product 2", price: "$150" },
-        { img: "./img/sp2.png", name: "Product 3", price: "$200" },
-        { img: "./img/sp1.png", name: "Product 4", price: "$250" },
-        { img: "./img/sp1.png", name: "Product 5", price: "$300" },
-        { img: "./img/sp1.png", name: "Product 6", price: "$350" },
-        { img: "./img/sp1.png", name: "Product 7", price: "$400" },
-        { img: "./img/sp1.png", name: "Product 8", price: "$450" },
-        { img: "./img/sp2.png", name: "Product 8", price: "$450" },
-        { img: "./img/sp1.png", name: "Product 8", price: "$450" },
-        { img: "./img/sp1.png", name: "Product 8", price: "$450" },
-        { img: "./img/sp1.png", name: "Product 8", price: "$450" },
-        { img: "./img/sp1.png", name: "Product 8", price: "$450" },
-      ];
+        let products = [
+          { img: "./img/sp1.png", name: "Product 1", price: "$99" },
+          { img: "./img/sp1.png", name: "Product 2", price: "$150" },
+          { img: "./img/sp2.png", name: "Product 3", price: "$200" },
+          { img: "./img/sp1.png", name: "Product 4", price: "$250" },
+          { img: "./img/sp1.png", name: "Product 5", price: "$300" },
+          { img: "./img/sp1.png", name: "Product 6", price: "$350" },
+          { img: "./img/sp1.png", name: "Product 7", price: "$400" },
+          { img: "./img/sp1.png", name: "Product 8", price: "$450" },
+          { img: "./img/sp2.png", name: "Product 8", price: "$450" },
+          { img: "./img/sp1.png", name: "Product 8", price: "$450" },
+          { img: "./img/sp1.png", name: "Product 8", price: "$450" },
+          { img: "./img/sp1.png", name: "Product 8", price: "$450" },
+          { img: "./img/sp1.png", name: "Product 8", price: "$450" },
+        ];
 
-      let productContainer = document.getElementById("product-container");
-      let paginationContainer = document.getElementById("pagination");
-      let itemsPerPage = 8; // Số sản phẩm trên mỗi trang
-      let currentPage = 1;
+        let productContainer = document.getElementById("product-container");
+        let paginationContainer = document.getElementById("pagination");
+        let itemsPerPage = 8; // Số sản phẩm trên mỗi trang
+        let currentPage = 1;
 
-      function renderProducts(page) {
-        productContainer.innerHTML = "";
-        let start = (page - 1) * itemsPerPage;
-        let end = start + itemsPerPage;
-        let paginatedProducts = products.slice(start, end);
+        function renderProducts(page) {
+          productContainer.innerHTML = "";
+          let start = (page - 1) * itemsPerPage;
+          let end = start + itemsPerPage;
+          let paginatedProducts = products.slice(start, end);
 
-        paginatedProducts.forEach((product) => {
-        let col = document.createElement("div");
-        col.classList.add("col");
-        col.innerHTML = `
+          paginatedProducts.forEach((product) => {
+            let col = document.createElement("div");
+            col.classList.add("col");
+            col.innerHTML = `
               <div class="product-card">
                 <img src="${product.img}" alt="${product.name}">
                 <h5>${product.name}</h5>
@@ -153,37 +153,37 @@
                 <button class="btn btn-warning" onclick="location.href='product.html'">Xem chi tiết</button>
               </div>
             `;
-        productContainer.appendChild(col);
-        });
-      }
-
-      function renderPagination() {
-        paginationContainer.innerHTML = "";
-        let pageCount = Math.ceil(products.length / itemsPerPage);
-
-        for (let i = 1; i <= pageCount; i++) {
-        let li = document.createElement("li");
-        li.classList.add("page-item");
-        if (i === currentPage) li.classList.add("active");
-
-        let a = document.createElement("a");
-        a.classList.add("page-link");
-        a.href = "#";
-        a.textContent = i;
-        a.addEventListener("click", function (event) {
-          event.preventDefault();
-          currentPage = i;
-          renderProducts(currentPage);
-          renderPagination();
-        });
-
-        li.appendChild(a);
-        paginationContainer.appendChild(li);
+            productContainer.appendChild(col);
+          });
         }
-      }
 
-      renderProducts(currentPage);
-      renderPagination();
+        function renderPagination() {
+          paginationContainer.innerHTML = "";
+          let pageCount = Math.ceil(products.length / itemsPerPage);
+
+          for (let i = 1; i <= pageCount; i++) {
+            let li = document.createElement("li");
+            li.classList.add("page-item");
+            if (i === currentPage) li.classList.add("active");
+
+            let a = document.createElement("a");
+            a.classList.add("page-link");
+            a.href = "#";
+            a.textContent = i;
+            a.addEventListener("click", function (event) {
+              event.preventDefault();
+              currentPage = i;
+              renderProducts(currentPage);
+              renderPagination();
+            });
+
+            li.appendChild(a);
+            paginationContainer.appendChild(li);
+          }
+        }
+
+        renderProducts(currentPage);
+        renderPagination();
       });
     </script>
   </body>
