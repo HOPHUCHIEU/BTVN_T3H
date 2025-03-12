@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/homepage.css" />
+    <link rel=":stylesheet" href="./MyCart.html" />
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
   </head>
@@ -26,7 +27,11 @@
             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
             <li class="nav-item">
-              <button class="btn btn-primary">My Cart (0)</button>
+              <button class="btn btn-primary nav-item" type="button">
+                <a href="./MyCart.html" style="color: white" class="nav-item"
+                  >My Cart (0)</a
+                >
+              </button>
             </li>
           </ul>
         </div>
@@ -37,24 +42,16 @@
         <div class="col-md-3">
           <h4>Categories</h4>
           <ul class="list-group">
+            <li class="list-group-item"><input type="checkbox" /> Devices</li>
             <li class="list-group-item">
-              <input type="checkbox" checked /> Devices
+              <input type="checkbox" /> Furnitures
             </li>
+            <li class="list-group-item"><input type="checkbox" /> Cloths</li>
             <li class="list-group-item">
-              <input type="checkbox" checked /> Furnitures
+              <input type="checkbox" /> Foods & Drink
             </li>
-            <li class="list-group-item">
-              <input type="checkbox" checked /> Cloths
-            </li>
-            <li class="list-group-item">
-              <input type="checkbox" checked /> Foods & Drink
-            </li>
-            <li class="list-group-item">
-              <input type="checkbox" checked /> Materials
-            </li>
-            <li class="list-group-item">
-              <input type="checkbox" checked /> Computers
-            </li>
+            <li class="list-group-item"><input type="checkbox" /> Materials</li>
+            <li class="list-group-item"><input type="checkbox" /> Computers</li>
             <button class="btn btn-secondary mt-2">Show more ...</button>
           </ul>
         </div>
