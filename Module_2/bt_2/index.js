@@ -102,8 +102,7 @@
 // for (let i = a; i <= b; i++) {
 //   if (i % x === 0) {
 //     console.log(
-//       `Số nhỏ nhất trong khoảng ${a} đến ${b} mà chia hết cho ${x} là:`,
-//       i
+//       `Số nhỏ nhất trong khoảng ${a} đến ${b} mà chia hết cho ${x} là:`, i
 //     );
 //     found = true;
 //     break;
@@ -292,3 +291,16 @@
 // } while (n !== a);
 
 // console.log("Bạn đã đoán đúng, số cần tìm là:", a);
+
+const a = [1, 2, 3, 4, 5, 6];
+
+const x = new Array(1, 2, 4, 55, 2);
+for (let i = 0; i < a.length; i++) {
+  console.log(a[i]);
+}
+//b1 thêm 1 phần tử vào cuối mảng
+// console.log(a.push(7));
+// b2 thêm 1 phân tử vào đầu mảng
+// console.log(a.unshift(9));
+//b3 xóa 1 phần tử ở đầu mảng
+//b4 xóa 1 phần tử ở cuối mảng
